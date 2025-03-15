@@ -1,10 +1,13 @@
 import streamlit as st
 import pandas as pd
 
+#les imports peuvent etre en premier mais par la suite pour bien executer le programme dans streamlit on doit définir l'affiche en premier 
+
+st.set_page_config(page_title="Surveillance NFS", layout="wide")
+
 # Interface utilisateur
 st.title("Surveillance NFS sous Méthotrexate")
 st.write("Bienvenue sur l'application de surveillance des patients sous Méthotrexate")
-st.set_page_config(page_title="Surveillance NFS", layout="wide")
 
 # Entrée des données patient
 patient_id = st.number_input("ID Patient", min_value=1, step=1)
